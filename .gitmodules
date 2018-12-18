@@ -1,0 +1,12 @@
+[submodule ".config/ibus/rime/rime-zhengma"]
+	path = .config/ibus/rime/rime-zhengma
+	url = https://github.com/acevery/rime-zhengma.git
+[submodule ".config/ibus/rime/rime-zhengma-st"]
+	path = .config/ibus/rime/rime-zhengma-st
+	url = https://github.com/vfreex/rime-zhengma.git
+[submodule ".oh-my-zsh/custom/plugins/zsh-autosuggestions"]
+	path = .oh-my-zsh/custom/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule ".oh-my-zsh/custom/plugins/zsh-syntax-highlighting"]
+	path = .oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
