@@ -106,3 +106,16 @@ export QT_IM_MODULE=ibus
 export LC_CTYPE=en_US.UTF-8
 
 #autoload -U compinit && compinit
+#
+sleeps(){
+    echo "sudo wakeup $2" | at now + $1
+}
+sleepsex(){
+    start=`date -d $1 +%s`
+    _end=`date -d $2 +%s`
+    _diff=$(( $_end - $start ))
+    _diff_min=$(( $_diff / 60 ))
+    cmd="echo \"wakeup $_diff_min min\" | at now + $1"
+    echo $cmd
+    eval $cmd
+}

@@ -1,1 +1,8 @@
 export QT_IM_MODULE=ibus
+MC=(`xrandr -q -d :0 | grep " connected" | wc -l`)
+
+if [ $MC = "3" ]; then
+xrandr --output DP1 --mode 1920x1080 --rotate right --pos 0x0
+xrandr --output HDMI1 --pos 1080x0
+xrandr --output eDP1 --pos 3000x0
+fi
